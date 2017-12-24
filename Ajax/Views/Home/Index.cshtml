@@ -1,0 +1,66 @@
+﻿@using Ajax.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row" style="margin-top:25px;">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label>Marka</label>
+                <select name="marka" class="form-control">
+                    <option value="0">Choose</option>
+                    @foreach (Marka item in ViewBag.marka)
+                    {
+                        <option value="@item.id">@item.name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Model</label>
+                <select name="madel" class="form-control">
+                    <option value="0">Choose</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-8">
+        <form>
+            <div class="form-group">
+                <label>City</label>
+                <select name="cities" class="form-control">
+                    <option value="0">Select</option>
+                    <option value="Baku">Baki</option>
+                    <option value="Ganja">Gence</option>
+                    <option value="Khazakh">Qazax</option>
+                </select>
+            </div>
+        </form>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Fajr</th>
+                    <th>Dhuhr</th>
+                    <th>Asr</th>
+                    <th>Maghrib</th>
+                    <th>Isha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="timing">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr />
+

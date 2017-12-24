@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AjaxModelContainer" CdmEntityContainer="AjaxEntities1">
+    <EntitySetMapping Name="Madel">
+      <EntityTypeMapping TypeName="AjaxModel.Madel">
+        <MappingFragment StoreEntitySet="Madel">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="marka_id" ColumnName="marka_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marka">
+      <EntityTypeMapping TypeName="AjaxModel.Marka">
+        <MappingFragment StoreEntitySet="Marka">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
